@@ -1,23 +1,17 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity >=0.8.15; /*
-  __     ___      _     _
-  \ \   / (_)    | |   | |  ███╗   ███╗ █████╗ ████████╗██╗  ██╗ ██████╗ ██╗  ██╗██╗  ██╗ ██████╗ ██╗  ██╗
-   \ \_/ / _  ___| | __| |  ████╗ ████║██╔══██╗╚══██╔══╝██║  ██║██╔════╝ ██║  ██║╚██╗██╔╝██╔════╝ ██║  ██║
-    \   / | |/ _ \ |/ _` |  ██╔████╔██║███████║   ██║   ███████║███████╗ ███████║ ╚███╔╝ ███████╗ ███████║
-     | |  | |  __/ | (_| |  ██║╚██╔╝██║██╔══██║   ██║   ██╔══██║██╔═══██╗╚════██║ ██╔██╗ ██╔═══██╗╚════██║
-     |_|  |_|\___|_|\__,_|  ██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║╚██████╔╝     ██║██╔╝ ██╗╚██████╔╝     ██║
-       yieldprotocol.com    ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝      ╚═╝╚═╝  ╚═╝ ╚═════╝      ╚═╝
-*/
+pragma solidity >=0.8.15;
 
-/// Smart contract library of mathematical functions operating with signed
-/// 64.64-bit fixed point numbers.  Signed 64.64-bit fixed point number is
-/// basically a simple fraction whose numerator is signed 128-bit integer and
-/// denominator is 2^64.  As long as denominator is always the same, there is no
-/// need to store it, thus in Solidity signed 64.64-bit fixed point numbers are
-/// represented by int128 type holding only the numerator.
+// Smart contract library of mathematical functions operating with signed
+// 64.64-bit fixed point numbers.  Signed 64.64-bit fixed point number is
+// basically a simple fraction whose numerator is signed 128-bit integer and
+// denominator is 2^64.  As long as denominator is always the same, there is no
+// need to store it, thus in Solidity signed 64.64-bit fixed point numbers are
+// represented by int128 type holding only the numerator.
+
 /// @title  Math64x64.sol
 /// @author Mikhail Vladimirov - ABDK Consulting
-/// https://github.com/abdk-consulting/abdk-libraries-solidity/blob/master/ABDKMath64x64.sol
+// https://github.com/abdk-consulting/abdk-libraries-solidity/blob/master/ABDKMath64x64.sol
+
 library Math64x64 {
     /* CONVERTERS
      ******************************************************************************************************************/
